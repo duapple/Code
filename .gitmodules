@@ -1,0 +1,3 @@
+[submodule "UDP_Server"]
+	path = UDP_Server
+	url = https://github.com/duapple/UDP_Server.git
