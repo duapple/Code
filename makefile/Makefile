@@ -18,14 +18,12 @@ OBJ_DIR = ./build
 
 OBJS = $(SRCS:.c=.o)
 
-
-$(TARGET):$(OBJS)
-	$(CC) -o $@ $(addprefix $(OBJ_DIR)/,$^) $(LDFLAGS)
-
+$(TARGET): $(addprefix $(OBJ_DIR)/,$(OBJS))
+	$(CC) -o $@ $^ $(LDFLAGS)
  
 clean:
-	rm -f  $(OBJ_DIR)/*.o server
+	rm -f ./*.o $(OBJ_DIR)/*.o  $(OBJ_DIR)/*/*.o server
 
 
-%.o:%.c
-	$(CC) -c $(CFLAGS) $(INCLUDE) $<  -o $(OBJ_DIR)/$@ 
+$(addprefix $(OBJ_DIR)/,%.o):%.c
+	$(CC) -c $(CFLAGS) $(INCLUDE) $<  -o $@   
