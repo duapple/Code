@@ -1,0 +1,27 @@
+{
+	"name":	"hejiang",
+	"id":	"66",
+	"grade":	{
+		"Chinese":	"98",
+		"Math":	"99",
+		"English":	"89",
+		"Music":	{
+			"one":	"66",
+			"two":	"77",
+			"three":	"98"
+		}
+	},
+	"protocols":	[{
+			"type":	"0",
+			"enabled":	"0",
+			"port":	"8001"
+		}, {
+			"type":	"1",
+			"enabled":	"1",
+			"port":	"8002"
+		}, {
+			"type":	"2",
+			"enabled":	"0",
+			"port":	"8003"
+		}]
+}
