@@ -1,0 +1,67 @@
+# 安装显卡驱动
+sudo ubuntu-drivers autoinstall
+
+# 安装im
+sudo apt install vim
+
+# 安装vscode
+
+
+# 安装python
+sudo install ipython
+sudo install ipython3
+sudo install python-pip
+sudo install python3-pip
+
+# 安装 wechat qq dingtalk
+sudo apt-get install com.qq.weixin.deepin
+sudo apt-get install com.qq.im.deepin
+sudo apt-get install com.dingtalk.deepin
+sudo apt-get install deepin.com.qq.office
+sudo apt-get install deepin.com.qq.light
+sudo apt install deepin-wine
+env WINEPREFIX="/home/river/.deepinwine/Deepin-WeChat" deepin-wine winecfg
+env WINEPREFIX="/home/river/.deepinwine/Deepin-QQ" deepin-wine winecfg
+env WINEPREFIX="/home/river/.deepinwine/Deepin-Dding" deepin-wine winecfg
+
+# 安装网易云音乐
+sudo vim /opt/netease/netease-cloud-music/netease-cloud-music.bash
+# export QT_SCALE_FACTOR=2
+apt install libcanberra-gtk-module -y
+
+# 安装qv2ray
+# sudo snap install qv2ray
+# https://qv2ray.net/lang/zh/getting-started/step1.html#%E6%9D%A5%E8%87%AA%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8
+
+sudo apt install gnupg ca-certificates curl
+curl -sSL https://qv2ray.net/debian/pubkey.gpg | sudo apt-key add -
+echo "deb [arch=amd64] https://qv2ray.net/debian/ focal main" | sudo tee /etc/apt/sources.list.d/qv2ray.list
+sudo apt update 
+sudo apt install qv2ray
+
+# unar
+sudo apt install unar
+
+# 安装TopIcons Plus
+sudo apt-get install chrome-gnome-shell
+# https://github.com/phocean/TopIcons-plus
+
+# 安装proxychains
+sudo apt install proxychains4 
+sudo vim /etc/proxychains4.conf
+
+# 安装 typora
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt-get update
+sudo apt-get install typora
+
+# 安装deepin-screeshot
+sudo apt install deepin-screeshot
+
+# 安装 chrome
+
+# 安装git
+
+
+
