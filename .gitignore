@@ -1,0 +1,3 @@
+# build
+message_queue/build/*
+socket/build/*
